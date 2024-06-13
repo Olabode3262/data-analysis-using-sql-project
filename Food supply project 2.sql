@@ -167,3 +167,11 @@ from foodbalancesheets_e_africa_noflag
 where element like 'food supply'
 group by area_code, area, element
 order by '2014' desc;
+
+select distinct(area), SUM(y2014) AS y2014, SUM(y2015) AS y2015, 
+       SUM(y2016) AS y2016, SUM(y2017) AS y2017, 
+       SUM(y2018) AS y2018
+FROM foodbalancesheets_e_africa_noflag
+WHERE element = 'production'
+group by area 
+order by y2014 desc;
