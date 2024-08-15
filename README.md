@@ -1,1 +1,1 @@
-# data-analysis-using-sql-project
+# Descriptive-data-analysis-using-sql
